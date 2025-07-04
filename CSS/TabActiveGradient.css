@@ -26,7 +26,7 @@
   -webkit-text-fill-color: transparent;
   animation: gradientMove 8s linear infinite;
 }
-
+/* trong suốt màu của folder */
 .monaco-icon-label
   > .monaco-icon-label-container
   > .monaco-icon-description-container
