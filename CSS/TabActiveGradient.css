@@ -16,13 +16,7 @@
   .editor-group-container.active
   > .title
   .tabs-container
-  > .tab.active {
-  /* color: linear-gradient(
-    90deg,
-    rgba(248, 86, 58, 0.8) 0%,
-    rgba(234, 238, 23, 0.753) 50%,
-    rgba(164, 241, 21, 0.726) 100%
-  ) !important; */
+  > .tab.active {  
   font-weight: bold;
   background: linear-gradient(270deg, #ff0000, #00ff00, #5151f7, #ff0000);
   background-size: 600% 600%;
