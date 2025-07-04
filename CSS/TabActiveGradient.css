@@ -25,3 +25,7 @@
   -webkit-text-fill-color: transparent;
   animation: gradientMove 8s linear infinite;
 }
+
+.monaco-icon-label>.monaco-icon-label-container>.monaco-icon-description-container>.label-description {
+  opacity: inherit;
+}
