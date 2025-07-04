@@ -1,0 +1,99 @@
+:root {
+  --line-width: 3px;
+  --line-color: #adbbff;
+  --start-angle: 0deg;
+  --delay: 0s;
+  --easing: linear;
+  --angle: 0deg;
+}
+@property --angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* chỉnh màu của tab của tab đang active */
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container.active
+  > .title
+  .tabs-container
+  > .tab.active {
+  /* color: linear-gradient(
+    90deg,
+    rgba(248, 86, 58, 0.8) 0%,
+    rgba(234, 238, 23, 0.753) 50%,
+    rgba(164, 241, 21, 0.726) 100%
+  ) !important; */
+  font-weight: bold;
+  background: linear-gradient(270deg, #ff0000, #00ff00, #5151f7, #ff0000);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 8s linear infinite;
+}
+
+.tab.active {
+  border-radius: 5px !important;
+  box-shadow: inset 0 1px 1px 0 rgba(199, 211, 234, 0.12),
+    inset 0 24px 48px 0 rgba(199, 211, 234, 0.05), 0 24px 32px 0 rgba(6, 6, 14, 0.7);
+}
+.tab-border-top-container {
+  animation: spinner 6s var(--easing) infinite, opacityz 3s var(--easing) infinite;
+  filter: drop-shadow(0 0 10px #adbbff);
+  width: 100% !important;
+  height: 100% !important;
+  background-color: transparent !important;
+  filter: drop-shadow(0 0 10px var(--line-color));
+  border-radius: inherit;
+}
+
+.tab-border-top-container:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: var(--line-width);
+  background: conic-gradient(
+    from calc(var(--angle) + var(--start-angle)),
+    transparent 0,
+    var(--line-color) 20%,
+    transparent 25%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#9eee93 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#9deee3 0 0);
+  mask-composite: xor;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: inherit;
+}
+@keyframes opacityz {
+  0% {
+    opacity: 0.75;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.75;
+  }
+}
+@keyframes spinner {
+  100% {
+    --angle: 360deg;
+  }
+}
