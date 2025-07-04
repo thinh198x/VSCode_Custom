@@ -1,12 +1,12 @@
 @keyframes gradientMove {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 50%, center center;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 50%, center center;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0% 50%, center center;
   }
 }
 /* chỉnh màu của tab của tab đang active */
@@ -16,16 +16,21 @@
   .editor-group-container.active
   > .title
   .tabs-container
-  > .tab.active {  
+  > .tab.active {
   font-weight: bold;
-  background: linear-gradient(270deg, #ff0000, #00ff00, #5151f7, #ff0000);
-  background-size: 600% 600%;
+  background: linear-gradient(270deg, #ff0000, #00ff00, #5151f7, #ff0000),
+    url('file:///D:/SOURCECODE/VSCode_Custom/Background/firework.gif');
+  background-size: 600% 600%, cover;
+  background-position: 0% 50%, center center;
   -webkit-background-clip: text !important;
   background-clip: text !important;
   -webkit-text-fill-color: transparent;
   animation: gradientMove 8s linear infinite;
 }
 
-.monaco-icon-label>.monaco-icon-label-container>.monaco-icon-description-container>.label-description {
+.monaco-icon-label
+  > .monaco-icon-label-container
+  > .monaco-icon-description-container
+  > .label-description {
   opacity: inherit;
 }
