@@ -3,10 +3,10 @@
     background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 50% 50%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 100% 50%;
   }
 }
 /* chỉnh màu của tab của tab đang active */
@@ -18,13 +18,13 @@
   .tabs-container
   > .tab.active {
   font-weight: bold;
-  background: linear-gradient(270deg, #ff0000, #00ff00, #5151f7, #ff0000);
-  background-size: 600% 600%;
+  background: linear-gradient(230deg, #c588fb, #f86262, #85fb8d, #8880fc, #ef51f7, #fff981);
+  background-size: 200% 200%;
   background-position: 0% 50%;
   -webkit-background-clip: text !important;
   background-clip: text !important;
   -webkit-text-fill-color: transparent;
-  animation: gradientMove 8s linear infinite;
+  animation: gradientMove 16s linear infinite;
 }
 /* trong suốt màu của folder */
 .monaco-icon-label
