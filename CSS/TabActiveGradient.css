@@ -3,13 +3,14 @@
     background-position: 0% 50%;
   }
   50% {
-    background-position: 50% 50%;
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 100% 50%;
+    background-position: 0% 50%;
   }
 }
 /* chỉnh màu của tab của tab đang active */
+.monaco-editor .line-numbers.active-line-number,
 .monaco-workbench
   .part.editor
   > .content
@@ -18,13 +19,36 @@
   .tabs-container
   > .tab.active {
   font-weight: bold;
-  background: linear-gradient(230deg, #c588fb, #f86262, #85fb8d, #8880fc, #ef51f7, #fff981);
-  background-size: 200% 200%;
-  background-position: 0% 50%;
+  background: linear-gradient(
+    45deg,
+    #c588fb,
+    #f86262,
+    #85fb8d,
+    #8880fc,
+    #ef51f7,
+    #fff981
+  ); /* Add background image */
+  background-size: 200% 200%; /* Adjust sizes for gradient and image */
+  background-position: 0% 50%; /* Position gradient and image */
   -webkit-background-clip: text !important;
   background-clip: text !important;
   -webkit-text-fill-color: transparent;
-  animation: gradientMove 16s linear infinite;
+  animation: gradientMove 5s ease infinite;
+}
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container.active
+  > .title
+  .tabs-container
+  > .tab.active::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('https://i.pinimg.com/originals/2b/81/1f/2b811f7ac0df20dd4d2b568cea7da109.gif');
+  background-position: top, center;
+  background-size: cover;
+  mix-blend-mode: color-dodge;
 }
 /* trong suốt màu của folder */
 .monaco-icon-label
@@ -32,4 +56,9 @@
   > .monaco-icon-description-container
   > .label-description {
   opacity: inherit;
+}
+.monaco-editor .line-numbers.active-line-number {
+  border-top: 1px solid #85fb8d;
+  border-bottom: 1px solid #85fb8d;
+  border-image: linear-gradient(45deg, #c588fb, #f86262, #85fb8d, #8880fc, #ef51f7, #fff981) 1;
 }
