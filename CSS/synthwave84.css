@@ -1,6 +1,6 @@
 .mtk6 {
-  color: #2aa6f9;
-  text-shadow: 0 0 2px #100c0f, 0 0 5px #dc078e33, 0 0 10px #fff3;
+  color: #b898eb;
+  text-shadow: 0 0 2px #fbc5ed, 0 0 5px #dc078e33, 0 0 10px #fff3 !important;
 }
 
 .mtk3 {
@@ -18,7 +18,7 @@
 
 .mtk7,
 .mtk9 {
-  color: #fff5f6;
+  color: #fbd0d4;
   text-shadow: 0 0 2px #000, 0 0 10px #fc1f2c75, 0 0 5px #fc1f2c75, 0 0 25px #fc1f2c75;
 }
 
