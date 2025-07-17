@@ -24,7 +24,7 @@
 
 .mtk11 {
   color: #72f1b8 !important;
-  text-shadow: 0 0 2px #100c0f, 0 0 10px #257c5575, 0 0 35px #21272475 !important;
+  text-shadow: 0 0 2px #9fcad9, 0 0 10px #257c5575, 0 0 35px #21272475 !important;
 }
 
 .mtk8,
@@ -33,13 +33,18 @@
   text-shadow: 0 0 2px #393a33, 0 0 8px #f39f0575, 0 0 2px #f39f0575;
 }
 
+.mtk17 {
+  color: #4ec980;
+  text-shadow: 0 0 2px #d1fa01, 0 0 8px #f39f0575, 0 0 8px #e0f7c8ed;
+}
+
 .monaco-editor .margin,
 .monaco-editor .inputarea.ime-input {
   background: transparent;
 }
 
 /* Add the subtle gradient to the editor background */
-.monaco-editor {
+.monaco-editor.remove {
   background-color: transparent !important;
   background-image: linear-gradient(to bottom, #2a2139 75%, #34294f);
   background-size: auto 100vh;
