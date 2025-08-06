@@ -23,8 +23,8 @@
 }
 
 .mtk11 {
-  color: #72f1b8 !important;
-  text-shadow: 0 0 2px #9fcad9, 0 0 10px #257c5575, 0 0 35px #21272475 !important;
+  color: #74fcbe !important;
+  text-shadow: 0 0 2px #9fcad9, 0 0 10px #04f7898f, 0 0 5px #9ff5ca75 !important;
 }
 
 .mtk8,
@@ -34,8 +34,8 @@
 }
 
 .mtk17 {
-  color: #4ec980;
-  text-shadow: 0 0 2px #d1fa01, 0 0 8px #f39f0575, 0 0 8px #e0f7c8ed;
+  color: #5af899;
+  text-shadow: 0 0 2px #d1fa01, 0 0 8px #fab83f75, 0 0 8px #e0f7c8ed;
 }
 
 span .mtk18 {
