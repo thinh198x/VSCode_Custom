@@ -5,13 +5,13 @@
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   padding: 1px;
-  width: 100% !important;
+  width: calc(100%-2px) !important;
   height: calc(100% - 3px) !important;
   background-color: transparent !important;
-  margin: 0px 3px !important;
+  /* margin: 0px 3px !important; */
 }
 .tab-border-top-container:before {
-  content: "";
+  content: '';
   width: 500px;
   height: 500px;
   position: absolute;
